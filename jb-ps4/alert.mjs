@@ -35,6 +35,8 @@ addEventListener('unhandledrejection', (event) => {
 })
 function debug_log(msg) {
 	document.getElementById("progress").innerHTML=msg;
+	document.getElementById("progress").style.display=none;
+	
 }
 // important that we dynamically import the exploit script after we attach
 import('./exploit.mjs');
